@@ -69,7 +69,7 @@ h3 {
     color: white;
     font-size: 1.6em;
     text-decoration: none;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
 }
 #nav li a:active {
     color: #25252a;
@@ -127,12 +127,12 @@ h3 {
 }
     
 #home #blog_button a:hover {
-	background-color: white;
-        color: #25252a;
+    background-color: white;
+    color: #25252a;
 }
 #home #blog_button a:active {
-	position:relative;
-	top:1px;
+    position:relative;
+    top:1px;
 }
 
 #about {
@@ -316,7 +316,7 @@ h3 {
     font-size: 1.5em;
 }
 
-#copyright  a { 
+#copyright a { 
     text-decoration: none;
     color: white;
 }
