@@ -1,0 +1,322 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #25252a;
+    font-size: 62.5%;
+}
+
+h1 {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 7.2em;
+    letter-spacing: -3px;
+    color: white;
+    margin: 0;
+    padding: 0;    
+}
+
+h3 {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 2.4em;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.clear {
+    clear: both;
+}
+
+#header {
+    width: 100%;
+    background-color: #fc7036;
+    height: 55px;
+    position: fixed;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#nav {
+    width: 325px;
+    float: right;
+    margin-top: 22px;
+}
+
+#logo {
+    float: left;
+}
+
+#nav ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+}
+
+#nav li {
+    float: left;
+    padding-left: 25px;
+}
+
+#nav li a {
+    color: white;
+    font-size: 1.6em;
+    text-decoration: none;
+    font-family: "Open Sans";
+}
+#nav li a:active {
+    color: #25252a;
+    border-bottom: 1px solid white;
+}
+
+#nav li a:hover {
+    border-bottom: 1px solid;
+}
+
+#home #about {
+    width: 100%;
+}
+
+#home {
+    background-color: #fc7036;
+    color: #333333;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 200px;
+}
+
+#home #newit {
+    margin-bottom: 30px;
+}
+
+#home #motto {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 2.2em;
+    text-align: left;
+    line-height: 120%;
+    color: white; 
+    margin-bottom: 150px;
+    padding: 0;
+}
+
+#home #motto .semibold {
+    font-weight: 600; 
+}
+
+#home #blog_button a {
+    background-color: #25252a;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 1.6em;
+    font-weight: 600;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+    
+#home #blog_button a:hover {
+    background-color: white;
+    color: #25252a;
+}
+#home #blog_button a:active {
+    position:relative;
+    top:1px;
+}
+
+#about {
+    background:url('../img/background_about.png') 100% 0 no-repeat fixed;
+    color: grey;
+    height: 300px;
+    margin-top: 0px;
+    padding-top: 100px;
+    background-size: cover;    
+}
+
+#about h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 120%;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#about #web {
+    float: left;
+    width: 310px;
+    margin-right: 15px;
+}
+
+#about img {
+    margin-right: 20px;
+    margin-bottom: 150px;
+}
+
+#about #mobile {
+    float: left;
+    width: 310px;
+    margin-right: 15px;
+}
+
+#about #ux {
+    float: left;
+    width: 310px;
+}
+
+#about .learn_more {
+    margin-top: 50px;
+}
+
+#about a {
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 1em;
+    color: #fc7036;
+}
+
+#about a:hover {
+    border-bottom: 1px solid;
+}
+
+#portfolio {
+    background-color: #e5e5e5;
+    color: #333333;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0 200px 0;
+}
+
+#portfolio h2 {
+    font-family: "Open Sans";
+    font-size: 3.6em;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+#portfolio h5 {
+    font-family: "Open Sans";
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #9d9d9d;
+}
+
+#portfolio p {
+    font-family: "Open Sans";
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 140%;
+    color: #666666;
+}
+
+#portfolio #part1 {
+    margin-top: 30px;
+}
+
+#portfolio #part2 {
+    margin-top: 30px;
+}
+
+#portfolio #part3 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+#portfolio #portfolio_button a {
+    margin-top: 100px;
+    background-color: #fc7036;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 1.6em;
+    font-weight: 600;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+    
+#portfolio #portfolio_button a:hover {
+	background-color: #25252a;
+}
+
+#portfolio #portfolio_button a:active {
+	position: relative;
+	top: 1px;
+}
+
+#contact {
+    background:url('../img/background_contact.jpg') 100% 0 no-repeat fixed;
+    color: grey;
+    height: 100px;
+    margin: 0;
+    padding: 200px 0 260px 0;
+    background-size: cover;
+}
+
+#contact .contact {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #e5e5e5;
+}
+
+#contact #social {
+    margin-top: 75px;
+}
+
+#contact #social #mail {
+    float: left;
+    margin-right: 15px;
+}
+
+#contact #social #github {
+    float: left;
+    margin-right: 15px;
+}
+
+#contact #social #twitter {
+    float: left;
+    margin-right: 15px;
+}
+
+#footer {
+    background-color: #111111;
+    color: #333333;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:25px 0;
+}
+
+#copyright {
+    text-decoration: none;
+    color: #999999;
+    font-family: "Open Sans";
+    font-size: 1.5em;
+}
+
+#copyright a { 
+    text-decoration: none;
+    color: white;
+}
