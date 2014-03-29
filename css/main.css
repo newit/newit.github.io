@@ -40,6 +40,7 @@ h3 {
     background-color: #fc7036;
     height: 55px;
     position: fixed;
+    z-index: 1;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -69,7 +70,7 @@ h3 {
     color: white;
     font-size: 1.6em;
     text-decoration: none;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
 }
 #nav li a:active {
     color: #25252a;
@@ -104,7 +105,7 @@ h3 {
     text-align: left;
     line-height: 120%;
     color: white; 
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     padding: 0;
 }
 
@@ -127,12 +128,12 @@ h3 {
 }
     
 #home #blog_button a:hover {
-    background-color: white;
-    color: #25252a;
+	background-color: white;
+        color: #25252a;
 }
 #home #blog_button a:active {
-    position:relative;
-    top:1px;
+	position:relative;
+	top:1px;
 }
 
 #about {
@@ -200,7 +201,7 @@ h3 {
 #portfolio {
     background-color: #e5e5e5;
     color: #333333;
-    height: 350px;
+    height: 400px;
     margin: 0 auto;
     overflow: hidden;
     padding: 100px 0 200px 0;
@@ -228,21 +229,47 @@ h3 {
     color: #666666;
 }
 
-#portfolio #part1 {
+#portfolio .part1 {
     margin-top: 30px;
 }
 
-#portfolio #part2 {
+#portfolio .part2 {
     margin-top: 30px;
 }
 
-#portfolio #part3 {
+#portfolio .part3 {
     margin-top: 30px;
     margin-bottom: 50px;
 }
 
+#portfolio #mobile_slide #mobile_text {
+    float: left;
+    width: 700px;
+}
 
-#portfolio #portfolio_button a {
+#portfolio #mobile_slide #mobile_pic {
+    float: right;
+}
+
+#portfolio #ux_slide #ux_text {
+    float: left;
+    width: 500px;
+}
+
+#portfolio #ux_slide #ux_pic {
+    float: right;
+}
+
+#portfolio #web_slide #web_text {
+    float: left;
+    width: 500px;
+}
+
+#portfolio #web_slide #web_pic {
+    float: right;
+}
+
+#portfolio .portfolio_button a {
     margin-top: 100px;
     background-color: #fc7036;
     -moz-border-radius: 2px;
@@ -257,11 +284,11 @@ h3 {
     text-decoration: none;
 }
     
-#portfolio #portfolio_button a:hover {
+#portfolio .portfolio_button a:hover {
 	background-color: #25252a;
 }
 
-#portfolio #portfolio_button a:active {
+#portfolio .portfolio_button a:active {
 	position: relative;
 	top: 1px;
 }
@@ -316,7 +343,7 @@ h3 {
     font-size: 1.5em;
 }
 
-#copyright a { 
+#copyright  a { 
     text-decoration: none;
     color: white;
 }
