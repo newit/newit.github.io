@@ -70,7 +70,7 @@ h3 {
     color: white;
     font-size: 1.6em;
     text-decoration: none;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
 }
 #nav li a:active {
     color: #25252a;
@@ -128,12 +128,13 @@ h3 {
 }
     
 #home #blog_button a:hover {
-	background-color: white;
-        color: #25252a;
+    background-color: white;
+    color: #25252a;
 }
+
 #home #blog_button a:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
 
 #about {
@@ -285,16 +286,16 @@ h3 {
 }
     
 #portfolio .portfolio_button a:hover {
-	background-color: #25252a;
+    background-color: #25252a;
 }
 
 #portfolio .portfolio_button a:active {
-	position: relative;
-	top: 1px;
+    position: relative;
+    top: 1px;
 }
 
 #contact {
-    background:url('../img/background_contact.jpg') 100% 0 no-repeat fixed;
+    background: url('../img/background_contact.jpg') 100% 0 no-repeat fixed;
     color: grey;
     height: 100px;
     margin: 0;
@@ -333,7 +334,7 @@ h3 {
     height: 50px;
     margin: 0 auto;
     overflow: hidden;
-    padding:25px 0;
+    padding: 25px 0;
 }
 
 #copyright {
@@ -343,7 +344,7 @@ h3 {
     font-size: 1.5em;
 }
 
-#copyright  a { 
+#copyright a {
     text-decoration: none;
     color: white;
 }
