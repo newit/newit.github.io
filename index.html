@@ -1,16 +1,58 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Newit- we create 'cause we like!</title>
         <meta name="description" content="Homepage of Newit, Poland-based team of professionals with passion for robust code and beautiful design.">
         <meta name="author" content="Newit">
-        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700"/>
         <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/ico" href="img/favicon.ico"/>    
+        
+<script>
+// Scrolling to the chosen section
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+});
+
+// Carousel
+$(document).ready(function() {
+  $("#carousel").owlCarousel({
+      navigationText: false,
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem: true
+  });
+});
+</script>
+        
     </head>
+    
     <body>
         <header id="header">
             <div class="content">
@@ -51,27 +93,28 @@
                     <div id="web">
                         <img src="img/web_icon.png" alt="Web Design" align="left"/> 
                         <h3>Web Design</h3>
-                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.</p>
-                        <p class="learn_more">
-                            <a href="#">Learn more</a>  <!-- Insert link to adequate carousel page !-->
+                        <p>Long story short: people do judge book by cover. Give your idea the cover it deserves!</p>
+                        <p class="learn_more" id="learn_more_web">
+                            <a href="#portfolio">Learn more</a>  <!-- Insert link to adequate carousel page !-->
                         </p>
                     </div>
+
 
                     <div id="mobile">
                         <img src="img/mobile_icon.png" alt="Mobile Design" align="left"/> 
                         <h3>Mobile Design</h3>
-                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.</p>
-                        <p class="learn_more">
-                            <a href="#">Learn more</a>  <!-- Insert link to adequate carousel page !-->
+                        <p>Create a connection between your idea and people, engaging them in interactive dialog.</p>
+                        <p class="learn_more" id="learn_more_mobile">
+                            <a href="#portfolio">Learn more</a>  <!-- Insert link to adequate carousel page !-->
                         </p>
                     </div>
 
                     <div id="ux">
                         <img src="img/ux_icon.png" alt="UX Design" align="left"/> 
                         <h3>UX Design</h3>
-                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin.</p>
-                        <p class="learn_more">
-                            <a href="#">Learn more</a>  <!-- Insert link to adequate carousel page !-->
+                        <p>Provide users  with entertaining, inspiring and enriching experience they will love and share.</p>
+                        <p class="learn_more" id="learn_more_ux">
+                            <a href="#portfolio">Learn more</a>  <!-- Insert link to adequate carousel page !-->
                         </p>
                     </div>
                     
@@ -81,22 +124,63 @@
         
         <div id="portfolio">
             <div class="content">
-                <div id="portfolio_content">
-                    <h2>Quotes App for iOS</h2>
-                    <h5>RELEASE DATE</h5>
-                    <p id="part1">Application designed to inspire people. </p>
-                    <p id="part2">Get new, precisely selected quote of the world top-thinkers every day! Browse through previous quotes and add them to list of your favourites.  Hit random quotes if you like to be surprised. Share the inspiration with your family and friends.</p>
-                    <p id="part3">It’s cool and it’s for free- check it on AppStore!</p>
-                    <h5>LANGUAGE</h5>
-                    <p id="part4">Polish</p>
-                    <div id="portfolio_button">
-                        <a href="#">Get it now</a>    <!-- insert link to Quotes app in AppStore !-->
+               
+                <div id="carousel" class="owl-carousel owl-theme">
+ 
+                    <div class="item" id="web_slide">
+                        <div id="web_text">
+                            <h2>Wiwo- everything for laundry</h2>
+                            <h5>WORK IN PROGRESS</h5>
+                            <p class="part1">Design in service of business needs.</p>
+                            <p class="part2">Wiwo is a company with over 15 years of experience, providing their customers with top-class professional laundry chemicals. While building the site, our main challenge was to adapt a clear, minimalistic design to wide range of products and services.</p>
+                            <p class="part3">We think we did pretty well. Have a look!</p>
+                            <h5></h5>
+                            <p class="part4"></p>
+                        </div>
+                        <div id="web_pic">
+                            <img src="img/laundry.png" />
+                        </div>
+                        <div class="portfolio_button">
+                            <a href="">See the site</a>
+                        </div>
                     </div>
+                    
+                    <div class="item" id="mobile_slide">
+                        <div id="mobile_text">
+                            <h2>Quotes App for iOS</h2>
+                            <h5>RELEASE DATE TO BE ANNOUNCED SOON</h5>
+                            <p class="part1">Application designed to inspire people.</p>
+                            <p class="part2">Get new, precisely selected quote of the world top-thinkers every day! Browse through previous quotes and add them to list of your favourites.  Hit random quotes if you like to be surprised. Share the inspiration with your family and friends.</p>
+                            <p class="part3">It’s cool and it’s for free- check it on AppStore!</p>
+                            <h5>LANGUAGE</h5>
+                            <p class="part4">Polish</p>
+                        </div>
+                        <div id="mobile_pic">
+                            <img src="img/quotes.png" />
+                        </div>
+                        <div class="portfolio_button">
+                            <a href="">Get it now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="item" id="ux_slide">
+                        <div id="ux_text">
+                            <h2>We put User Experience first</h2>
+                            <h5>UX DESIGN</h5>
+                            <p class="part1">We know there's much more to app or website than just a pure graphic design and efficient code.</p>
+                            <p class="part2">We carefully craft our products around user needs and content- both on front and back-end level. Following iterative approach, we put a lot of thought into every stage of development.</p>
+                            <p class="part3"></p>
+                        </div>
+                        <div id="ux_pic">
+                            <img src="img/ux_isometric.png" />
+                        </div>
+                        <div class="portfolio_button">
+                            <a href="">See how we work</a>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-            
-            <div id="portfolio_screenshots">
-                <!-- Insert app screenshots !-->
+
             </div>
         </div>
         
@@ -107,13 +191,13 @@
 
                 <div id="social">
                     <div id="mail">
-                        <a href="mailto:contact@newit.pl"><img src="img/mail_tile.png" alt="Mail"/></a>
+                        <a href="mailto:contact@newit.pl"><img src="img/mail_icon.png" alt="Mail"/></a>
                     </div>
                     <div id="github">
-                        <a href="https://github.com/newit" target="_blank"><img src="img/github_tile.png" alt="Github"/></a>
+                        <a href="https://github.com/newit" target="_blank"><img src="img/github_icon.png" alt="Github"/></a>
                     </div>
                     <div id="twitter">
-                        <a href="https://twitter.com/newitpl" target="_blank"><img src="img/twitter_tile.png" alt="Twitter"/></a>
+                        <a href="https://twitter.com/newitpl" target="_blank"><img src="img/twitter_icon.png" alt="Twitter"/></a>
                     </div>
                 </div>
             </div>
