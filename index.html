@@ -12,7 +12,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script type="text/javascript" src="js/owl.carousel.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css"/>
-        <link rel="icon" type="image/ico" href="img/favicon.ico"/>    
+        <link rel="icon" type="image/ico" href="img/favicon.ico"/>
 <script>
 // Scrolling to the chosen section
 $(document).ready(function() {
@@ -24,7 +24,6 @@ $(document).ready(function() {
       var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
        if ($target) {
          var targetOffset = $target.offset().top;
-
 
          $(this).click(function() {
             $("#nav li a").removeClass("active");
@@ -66,7 +65,7 @@ $(document).ready(function() {
                 </nav>
             </div>
         </header>
-        
+
         <div id="home">
             <div class="content">
                 <div id="newit">
@@ -81,12 +80,12 @@ $(document).ready(function() {
                 </div>
             </div>
         </div>
-        
+
         <div id="about">
             <div class="content">
                 <div class="clear">
                     <div id="web">
-                        <img src="img/web_icon.png" alt="Web Design" align="left"/> 
+                        <img src="img/web_icon.png" alt="Web Design" align="left"/>
                         <h3>Web Design</h3>
                         <p>Long story short: people do judge book by cover. Give your idea the cover it deserves!</p>
                         <p class="learn_more" id="learn_more_web">
@@ -96,7 +95,7 @@ $(document).ready(function() {
 
 
                     <div id="mobile">
-                        <img src="img/mobile_icon.png" alt="Mobile Design" align="left"/> 
+                        <img src="img/mobile_icon.png" alt="Mobile Design" align="left"/>
                         <h3>Mobile Design</h3>
                         <p>Create a connection between your idea and people, engaging them in interactive dialog.</p>
                         <p class="learn_more" id="learn_more_mobile">
@@ -105,18 +104,18 @@ $(document).ready(function() {
                     </div>
 
                     <div id="ux">
-                        <img src="img/ux_icon.png" alt="UX Design" align="left"/> 
+                        <img src="img/ux_icon.png" alt="UX Design" align="left"/>
                         <h3>UX Design</h3>
                         <p>Provide users  with entertaining, inspiring and enriching experience they will love and share.</p>
                         <p class="learn_more" id="learn_more_ux">
                             <a href="#portfolio">Learn more</a>  <!-- Insert link to adequate carousel page !-->
                         </p>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        
+
         <div id="portfolio">
             <div class="content">
                 <div id="carousel" class="owl-carousel owl-theme">
@@ -137,7 +136,7 @@ $(document).ready(function() {
                             <a href="">See the site</a>
                         </div>
                     </div>
-                    
+
                     <div class="item" id="mobile_slide">
                         <div id="mobile_text">
                             <h2>Quotes App for iOS</h2>
@@ -155,7 +154,7 @@ $(document).ready(function() {
                             <a href="">Get it now</a>
                         </div>
                     </div>
-                    
+
                     <div class="item" id="ux_slide">
                         <div id="ux_text">
                             <h2>We put User Experience first</h2>
@@ -174,7 +173,7 @@ $(document).ready(function() {
                 </div>
             </div>
         </div>
-        
+
         <div id="contact">
             <div class="content">
                 <h1 id="white">Contact<font color="#fc7036"> us</font></h1>
@@ -193,7 +192,7 @@ $(document).ready(function() {
                 </div>
             </div>
         </div>
-        
+
         <div id="footer">
             <div class="content">
                 <div id="copyright">
@@ -201,5 +200,13 @@ $(document).ready(function() {
                 </div>
             </div>
         </div>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-49519889-1', 'newit.pl');
+            ga('send', 'pageview');
+        </script>
     </body>
 </html>
